@@ -1,75 +1,49 @@
-# Data Structure Tools
+# Kasper-Template-Two
 
-**Data Structure Tools** is a C++ library providing helpful utilities for working with various data structures, including arrays and STL containers like `vector`, `list`, and more. This library aims to simplify common operations, such as filling data structures with random values, checking if they’re sorted, and printing contents.
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![Language](https://img.shields.io/badge/language-HTML-orange.svg)
 
-## Features
+A static web project template designed to be a starting point for your static web projects.
 
-- **Random Data Insertion**: Easily fill arrays or STL containers with random values.
-- **Sort Checking**: Determine if a container is sorted in ascending or descending order.
-- **Flexible Printing**: Print any STL container or C-style array with ease.
-- **Template Support**: Generic functions allow usage across different container types.
+## Table of Contents
 
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 ## Installation
 
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/your-username/data-structure-tools.git
-    ```
-2. Include the `data_structure_tools.h` file in your project:
-    ```cpp
-    #include "data_structure_tools.h"
-    ```
+To get started with this template, you can clone the repository:
+
+```bash
+git clone https://github.com/AbdulrhmanAnsary/Kasper-Template-Two.git
+```
 
 ## Usage
 
-### Example Code
-Here's a sample usage of the library's features:
-
-```cpp
-#include <iostream>
-#include <vector>
-#include "data_structure_tools.h"
-
-int main() {
-    DataStructureTools tools;
-    
-    std::vector<int> numbers;
-    tools.randomFill(numbers, 10);
-    tools.print(numbers);
-    
-    bool is_sorted = tools.isSorted(numbers);
-    std::cout << "Is sorted: " << (is_sorted ? "Yes" : "No") << std::endl;
-
-    return 0;
-}
-```
-
-## Examples of functions
-
-randomFill(container, size): Fills the given container with random values.
-
-isSorted(container, ascending): Checks if the container is sorted in ascending or descending order.
-
-print(container): Prints the contents of the container in a formatted style.
-
+After cloning the repository, you can edit the files to suit your needs. Open index.html in your preferred code editor and start customizing the template.
 
 ## Contributing
 
-1. Fork the repository.
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
 
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
 
-2. Create a new branch with a descriptive name.
-
-
-3. Make your changes and commit them.
-
-
-4. Push to your fork and submit a pull request.
+1. Fork the Project
+2. Create your Feature Branch (git checkout -b feature/AmazingFeature)
+3. Commit your Changes (git commit -m 'Add some AmazingFeature')
+4. Push to the Branch (git push origin feature/AmazingFeature)
+5. Open a Pull Request
 
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](/LICENSE) file for details.
 
----
+## Contact
 
-Enjoy using Data Structure Tools to make working with data structures in C++ easier and more intuitive!
+AbdulrhmanAnsary - abdalrhmanmohamedansarymaky@gmail.com
+
+Project Link: https://github.com/AbdulrhmanAnsary/Kasper-Template-Two
+
+Feel free to adjust the contact information and other sections as needed.
+Public 
