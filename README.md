@@ -1,7 +1,7 @@
 # Kasper-Template-Two
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
-![Language](https://img.shields.io/badge/language-HTML-orange.svg)
+![Languages](https://img.shields.io/badge/languages-HTML%20%7C%20CSS%20%7C%20JS-orange.svg)
 
 A static web project template designed to be a starting point for your static web projects.
 
