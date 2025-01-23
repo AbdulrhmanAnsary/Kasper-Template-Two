@@ -1,10 +1,17 @@
-/* Start Global Rules */
+/* Start Variable */
+:root {
+  --main-color: #19c8fa;
+}
+
+/* End Variable / 
+/ Start Global Rules */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
+  /* border: solid 1px red; */
 }
 
 html {
@@ -13,7 +20,7 @@ html {
 
 body {
   font-family: "Open Sans", "sans-serif";
-  background-color: #295D67;
+  background-color: darkslategrey;
 }
 
 ul {
@@ -48,19 +55,89 @@ ul {
   }
 }
 
-/* Start Global Rules */
-/* Start Header */
-header {
-  
-}
+/* End Global Rules / / Start Header */
+header {}
 
 header .container {
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  position: relative;
+  min-height: 97px;
+  width: 100vw;
+}
+
+header .container::after {
+  content: "";
+  position: absolute;
+  background-color: rgb(162, 162, 162);
+  height: 1px;
+  width: calc(100% - 30px);
+  bottom: 0;
+  left: 15px;
 }
 
 header .container nav {
+  /* background-color: red; */
   display: flex;
+  flex-grow: 1;
+  justify-content: flex-end;
   align-items: center;
 }
+
+header .container nav::after {
+  content: "";
+  position: relative;
+  background-color: white;
+  height: 30px;
+  width: 1px;
+  right: 40px;
+}
+
+header .container nav .toggle-menu {
+  color: white;
+  font-size: 22px;
+  position: absolute;
+  right: 80px;
+}
+
+header .container nav .xmark {
+  display: none;
+  color: white;
+  font-size: 22px;
+  position: absolute;
+  right: 80px;
+}
+
+header .container nav ul {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 100%;
+  left: 0;
+  width: 100%;
+}
+
+header .container nav ul li a {
+  position: relative;
+  text-decoration: none;
+  color: white;
+  padding: 16px;
+  display: block;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+header .container nav ul li a.active,
+header .container nav ul li a:hover {
+  color: var(--main-color);
+  border-bottom: 1px solid var(--main-color);
+}
+
+header .container nav .form .fa-search {
+  color: white;
+  font-size: 20px;
+}
+
 /* End Header */
