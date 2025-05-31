@@ -1,10 +1,9 @@
-/* Start Variable */
+/* 1. Variables */
 :root {
   --main-color: #19c8fa;
 }
 
-/* End Variable / 
-/ Start Global Rules */
+/* 2. Global Rules */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -27,7 +26,7 @@ ul {
   list-style: none;
 }
 
-.container {
+.default-container {
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -36,35 +35,34 @@ ul {
 
 /* Small Screen */
 @media (min-width: 768px) {
-  .container {
-    width: 750px;
+  .default-container {
+    width: 810px;
   }
 }
 
 /* Medium Screen */
 @media (min-width: 992px) {
-  .container {
+  .default-container {
     width: 970px;
   }
 }
 
 /* Large Screen */
 @media (min-width: 1200px) {
-  .container {
+  .default-container {
     width: 1170px;
   }
 }
 
-/* End Global Rules */
-/* Start Header */
-header {
+/* 3. Header */
+.header {
   position: absolute;
   left: 0px;
   width: 100%;
   z-index: 2;
 }
 
-header .container {
+.header__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -72,7 +70,7 @@ header .container {
   min-height: 97px;
 }
 
-header .container::after {
+.header__container::after {
   content: "";
   position: absolute;
   height: 1px;
@@ -82,24 +80,17 @@ header .container::after {
   left: 15px;
 }
 
-header .container nav {
-  flex-grow: 1;
+/* Navigation */
+.nav {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  flex-grow: 1;
 }
 
-/* header .container nav::after {
-  content: "";
-  position: relative;
-  background-color: white;
-  height: 30px;
-  width: 1px;
-  right: 40px;
-} */
-
-header .container nav .toggle-menu,
-.xmark {
+/* Navigation icons */
+.nav__toggle-icon,
+.nav__close-icon {
   color: white;
   font-size: 22px;
   position: absolute;
@@ -107,16 +98,16 @@ header .container nav .toggle-menu,
 }
 
 @media (min-width: 768px) {
-  header .container nav .toggle-menu {
+  .nav__toggle-icon {
     display: none;
   }
 }
 
-header .container nav .xmark {
+.nav__close-icon {
   display: none;
 }
 
-header .container nav ul {
+.nav__menu {
   position: absolute;
   display: none;
   flex-direction: column;
@@ -127,7 +118,7 @@ header .container nav ul {
 }
 
 @media (min-width: 768px) {
-  header .container nav ul {
+  .nav__menu {
     position: relative;
     display: flex;
     flex-direction: row;
@@ -136,7 +127,7 @@ header .container nav ul {
   }
 }
 
-header .container nav ul li a {
+.nav__link {
   position: relative;
   text-decoration: none;
   color: white;
@@ -146,14 +137,14 @@ header .container nav ul li a {
   transition: 0.3s;
 }
 
-header .container nav ul li a.active,
-header .container nav ul li a:hover {
+.nav__link--active,
+.nav__link:hover {
   color: var(--main-color);
   border-bottom: 1px solid var(--main-color);
 }
 
-/* Start .form problem */
-header .container nav .form {
+/* Search Box */
+.nav__search {
   width: 40px;
   height: 30px;
   position: relative;
@@ -161,18 +152,13 @@ header .container nav .form {
   border-left: 1px solid white;
 }
 
-header .container nav .form i {
+.nav__search-icon {
   color: white;
   position: absolute;
-  font-size: 20;
+  font-size: 20px;
   top: 50%;
   transform: translateY(-50%);
   right: 0;
 }
 
-header .container nav .form .fa-search {
-  color: white;
-  font-size: 20px;
-}
-
-/* End Header */
+/* 4. Landing */
