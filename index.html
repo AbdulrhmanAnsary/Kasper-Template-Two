@@ -21,42 +21,61 @@
 </head>
 
 <body>
-  <!-- Start Header -->
-  <header>
-    <div class="container">
-      <a href="#" class="logo">
-        <img src="images/logo.png" alt="logo.png">
+  <!-- Header -->
+  <header class="header">
+    <div class="header__container default-container">
+      <a href="#" class="header__logo">
+        <img src="images/logo.png" alt="logo" class="header__logo-image">
       </a>
-      <nav>
-        <i class="fas fa-bars toggle-menu"></i>
-        <i class="fa-solid fa-square-xmark xmark"></i>
-        <ul class="menu">
-          <li>
-            <a class="active" href="">Home</a>
+      <!-- Toggle & Menu -->
+      <nav class="nav">
+        <i class="nav__toggle-icon fas fa-bars" id="toggle-icon"></i>
+        <i class="nav__close-icon fa-solid fa-square-xmark" id="close-icon"></i>
+        <ul class="nav__menu" id="menu">
+          <li class="nav__item">
+            <a class="nav__link nav__link--active" href="">Home</a>
           </li>
-          <li>
-            <a href="">Services</a>
+          <li class="nav__item">
+            <a class="nav__link" href="">Services</a>
           </li>
-          <li>
-            <a href="">Portfolio</a>
+          <li class="nav__item">
+            <a class="nav__link" href="">Portfolio</a>
           </li>
-          <li>
-            <a href="">About</a>
+          <li class="nav__item">
+            <a class="nav__link" href="">About</a>
           </li>
-          <li>
-            <a href="">Pricing</a>
+          <li class="nav__item">
+            <a class="nav__link" href="">Pricing</a>
           </li>
-          <li>
-            <a href="">Contact</a>
+          <li class="nav__item">
+            <a class="nav__link" href="">Contact</a>
           </li>
         </ul>
-        <div class="form">
-          <i class="fas fa-search"></i>
+        <div class="nav__search">
+          <i class="nav__search-icon fas fa-search"></i>
         </div>
       </nav>
     </div>
   </header>
-  <!-- End Header -->
+
+  <!-- Landing -->
+  <div class="landing">
+    <div class="landing-container default-container">
+      <div class="landing__image-wrapper">
+        <!-- <img class="landing__image" src="images/landing.jpeg" alt="landing"> -->
+      </div>
+      <!-- <div class="landing__content">
+        <h1 class="landing__title">
+          Hello World!
+          We Are Kasper We Make Art.
+        </h1>
+        <p class="landing__description">
+          Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam. Accumsan id imperdiet et, porttitor at sem. Mauris blandit aliquet elit, eget tincidunt.
+        </p>
+      </div> -->
+    </div>
+  </div>
+
   <!-- The Main JS File -->
   <script src="js/main.js"></script>
 </body>
