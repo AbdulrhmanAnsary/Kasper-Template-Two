@@ -1,12 +1,13 @@
-/* Variables */
+/* ======================================== Variables ======================================== */
 :root {
   /* Colors */
   --main-color: #19c8fa;
   --transparent-color: rgb(15 116 143 / 70%);
   --description-color: #777;
+  --section-padding: 100px;
 }
 
-/* Global Rules */
+/* ======================================== Global Rules ======================================== */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -56,7 +57,7 @@ ul {
   }
 }
 
-/* Components */
+/* ======================================== Components ======================================== */
 /* Main Heading */
 .main-heading {
   text-align: center;
@@ -102,7 +103,7 @@ ul {
   color: var(--description-color);
 }
 
-/* 1. Header */
+/* ======================================== 1. Header ======================================== */
 .header {
   position: absolute;
   left: 0px;
@@ -211,7 +212,7 @@ ul {
   right: 0;
 }
 
-/* 2. Landing */
+/* ======================================== 2. Landing ======================================== */
 .landing {
   position: relative;
   min-height: 100vh;
@@ -288,6 +289,7 @@ ul {
 
 /* Small Screen */
 @media (max-width: 767px) {
+
   .landing__left-arrow,
   .landing__right-arrow {
     display: none;
@@ -317,5 +319,65 @@ ul {
   border-color: var(--main-color);
 }
 
+/* ======================================== 3. Services ======================================== */
 .services {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+
+.services__content {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .services__content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.services__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .services__box {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-areas:
+      "icon heading"
+      "icon description";
+
+    column-gap: 2rem;
+    row-gap: 2rem;
+
+    align-items: start;
+    text-align: start;
+  }
+}
+
+.services__icon {
+  grid-area: icon;
+}
+
+.services__heading {
+  grid-area: heading;
+  color: var(--main-color);
+}
+
+@media (min-width: 768px) {
+  .services__heading {
+    display: flex;
+  }
+}
+
+.services__description {
+  grid-area: description;
+  line-height: 2;
+  color: var(--description-color);
 }

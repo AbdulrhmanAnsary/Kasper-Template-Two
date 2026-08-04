@@ -1,10 +1,11 @@
 # Kasper-Template-Two
+
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Languages](https://img.shields.io/badge/languages-HTML%20%7C%20CSS%20%7C%20JS-orange.svg)
 
 Kasper-Template-Two is a responsive static web template with modern sections, designed to provide a solid foundation for your web projects.
 
-## 📌 Table of Contents  
+## 📌 Table of Contents
 
 - [Features](#features)
 - [Installation](#installation)
@@ -14,26 +15,26 @@ Kasper-Template-Two is a responsive static web template with modern sections, de
 
 ## 🚀 Features
 
-- **Home Page:** A clear and informative landing page.  
-- **Simple & Responsive Design:** Built with HTML and CSS for cross-device compatibility. 
-- **Navigation Bar:** Includes links to other sections or pages.  
-- **Search Bar:** A simple form to search for content within the page.  
-- **Services Section:** Highlights key offerings or features.  
-- **Design Section:** Showcases UI/UX elements or concepts.  
-- **Portfolio Section:** Displays previous projects or works.  
-- **Video Section:** Integrates a featured video for better engagement.  
-- **About Section:** Provides an overview of the website’s purpose.  
-- **Stats Section:** Shows key statistics about the business or website.  
-- **Our Skills Section:** Highlights various skills with progress bars.  
-- **Quote Section:** A motivational or business-related quote section.  
-- **Subscribe Section:** A form for users to subscribe to a newsletter.  
-- **Contact Section:** Displays contact details or a simple form.  
-- **Footer Section:** Includes links and copyright information.  
-- **Performance Optimization:** Clean code with minimal images for fast loading.  
+- **Home Page:** A clear and informative landing page.
+- **Simple & Responsive Design:** Built with HTML and CSS for cross-device compatibility.
+- **Navigation Bar:** Includes links to other sections or pages.
+- **Search Bar:** A simple form to search for content within the page.
+- **Services Section:** Highlights key offerings or features.
+- **Design Section:** Showcases UI/UX elements or concepts.
+- **Portfolio Section:** Displays previous projects or works.
+- **Video Section:** Integrates a featured video for better engagement.
+- **About Section:** Provides an overview of the website’s purpose.
+- **Stats Section:** Shows key statistics about the business or website.
+- **Our Skills Section:** Highlights various skills with progress bars.
+- **Quote Section:** A motivational or business-related quote section.
+- **Subscribe Section:** A form for users to subscribe to a newsletter.
+- **Contact Section:** Displays contact details or a simple form.
+- **Footer Section:** Includes links and copyright information.
+- **Performance Optimization:** Clean code with minimal images for fast loading.
 
 ---
 
-## 🛠 Installation  
+## 🛠 Installation
 
 To get started with this template, you can clone the repository:
 
